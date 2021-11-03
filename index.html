@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script  type="text/javascript">
+        // var first = document.getElementById("first");
+        // var second = document.getElementById("second");
+
+
+
+        function addition(){
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            var result = document.getElementById("result");
+
+            result.innerHTML = Number(first.value) + Number(second.value);
+        }
+        function subtraction(){
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            var result = document.getElementById("result");
+
+            result.innerHTML = Number(first.value) - Number(second.value);
+        }
+        function multiplication(){
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            var result = document.getElementById("result");
+            result.innerHTML = Number(first.value) * Number(second.value);
+        }
+        function division(){
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            var result = document.getElementById("result");
+            // Number()
+            result.innerHTML = Number(first.value) / Number(second.value);
+        }
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="forinput" ><input type="number" id="first"></div>
+            (operation)
+            <div class="forinput" ><input type="number" id="second"></div>
+        </div>
+        <br>
+        <div class="but">
+            <div class="buttons" id="add" onclick="addition()"> <button>ADD</button></div>
+            <div class="buttons" id="subtract" onclick="subtraction()"><button>SUBTRACT</button></div>
+            <div class="buttons" id="multiply" onclick="multiplication()"><button>MULTIPLY</button></div>
+            <div class="buttons" id="divide" onclick="division()"><button>DIVIDE</button> </div>
+        </div>
+        
+
+        <div id="result">
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.calculator{
+    width: 440px;
+    height: 500px;
+    margin: auto ;
+}
+.display{
+    display: flex;
+}
+.forinput{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forinput input{
+    width: 100px;
+    height: 30px;
+}
+.but{
+    display: flex;
+}
+
+.buttons{
+    margin: 5px;
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+}
+button{
+    /* background-color: black;
+    color: white; */
+    border-width: 0px;
+    background-color: rgb(199, 193, 199);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#result{
+    margin: 50px auto;
+    width: 150px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+
+}
